@@ -9,6 +9,6 @@ class Service extends Model
     public function fields(){
         return $this->belongsTo(Field::class,'field_id');
     }
-    protected $fillable = ['nama','field_id'];
+    protected $fillable = ['nama','jenis_layanan'];
 
 }
