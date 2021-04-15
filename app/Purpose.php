@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Purpose extends Model
 {
-    protected $fillable = ['guest_id','field_id','service_id','tujuan','kritik_saran','rating'];
+    protected $fillable = ['guest_id','field_id','service_id','tanggal_konsultasi','tujuan','kritik_saran','rating'];
     // public function purpose(){
     //     return $this->belongsToMany('App\Purpose', 'field_guest', 'guest_id', 'field_id');
     // }

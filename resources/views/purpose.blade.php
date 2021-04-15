@@ -22,6 +22,13 @@
                         @csrf
                         <input id="guest_id" type="hidden" name="guest_id" value="{{$data->id}}">
                         <div class="form-group row">
+                            <label for="tanggal_konsultasi" class="col-md-4 col-form-label text-md-right">{{ __('Tanggal Konsultasi') }}</label>
+
+                            <div class="col-md-6">
+                                <input class="form-control" type="date" id="tanggal_konsultasi" min="{{ now()->toDateString('Y-m-d') }}" name="tanggal_konsultasi">
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="bidang" class="col-md-4 col-form-label text-md-right">{{ __('Bidang') }}</label>
 
                             <div class="col-md-6">
