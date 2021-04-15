@@ -40,6 +40,17 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="kritik_saran" class="col-md-4 col-form-label text-md-right">{{ __('Kritik / Saran') }}</label>
+                            <div class="col-md-6">
+                                <textarea id="kritik_saran" class="form-control @error('kritik_saran') is-invalid @enderror" name="kritik_saran" value="{{ old('kritik_saran') }}" required autocomplete="kritik_saran"></textarea>
+                                @error('kritik_saran')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
                         <p>
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
