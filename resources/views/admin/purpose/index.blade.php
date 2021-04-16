@@ -45,7 +45,6 @@
                                 <thead>
                                     <tr>
                                         <th>Nama Tamu</th>
-                                        <th>Unit Kerja</th>
                                         <th>ke Bidang</th>
                                         <th>Layanan yang dituju</th>
                                         <th>Tujuan</th>
@@ -56,7 +55,6 @@
                                     @foreach ($data as $da)
                                     <tr>
                                         <td>{{$da->guests->nama}}</td>
-                                        <td>{{$da->guests->unit_kerja}}</td>
                                         <td>{{$da->fields->nama}}</td>
                                         <td>{{$da->services->jenis_layanan}}</td>
                                         <td>{{$da->tujuan}}</td>
@@ -66,7 +64,6 @@
                                 <tfoot>
                                     <tr>
                                         <th>Nama Tamu</th>
-                                        <th>Unit Kerja</th>
                                         <th>ke Bidang</th>
                                         <th>Layanan yang dituju</th>
                                         <th>Tujuan</th>

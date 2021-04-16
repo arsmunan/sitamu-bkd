@@ -13,5 +13,4 @@ class Guest extends Model
     public function organizations(){
         return $this->hasOne(Organization::class, 'organization_id');
     }
-
 }
