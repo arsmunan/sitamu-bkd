@@ -82,6 +82,7 @@ class GuestsController extends Controller
         //$req = $request->all();
         $data = Purpose::find($request->id);
         $data->kritik_saran = $request->kritik_saran;
+        $data->rating = $request->rating;
         $data->save();
         return view('thank');
         //$data = Purpose::create($request->all());
