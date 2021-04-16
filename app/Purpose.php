@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Purpose extends Model
 {
     protected $fillable = ['guest_id','field_id','service_id','tanggal_konsultasi','tujuan','kritik_saran','rating'];
-    // public function purpose(){
-    //     return $this->belongsToMany('App\Purpose', 'field_guest', 'guest_id', 'field_id');
-    // }
     public function guests(){
         return $this->hasOne(Guest::class, 'id', 'guest_id');
     }
@@ -18,5 +15,8 @@ class Purpose extends Model
     }
     public function services(){
         return $this->hasOne(Service::class, 'id', 'service_id');
+    }
+    public function organization(){
+        return $this->hasOne(Organization::class, 'id', 'organization_id');
     }
 }
